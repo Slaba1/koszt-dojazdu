@@ -1,5 +1,5 @@
-const CACHE = 'koszt-dojazdu-v3';
-const APP_FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
+const CACHE = 'koszt-dojazdu-v4';
+const APP_FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(APP_FILES)));
